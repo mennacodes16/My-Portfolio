@@ -1,0 +1,114 @@
+.hero {
+    background-color: #242424;
+    min-height: 100vh;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.hero nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero nav .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.hero nav .logo span {
+    color: #4bffa5;
+}
+.nav-links a {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 35px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.nav-links a:hover,
+.nav-links a.active {
+    color: #4bffa5;
+}
+.hero .content {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .content .div-text {
+    width: 45%;
+}
+.hero .content .div-text h4 {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.hero .content .div-text h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 25px 0 10px;
+}
+.hero .content .div-text span {
+    color: #4bffa5;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.social-link {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.social-link a {
+    text-decoration: none;
+}
+.social-link a i {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #4bffa5;
+    color: #4bffa5;
+    text-align: center;
+    line-height: 41px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.social-link a i:hover {
+    color: #242424;
+    background-color: #4bffa5;
+    box-shadow: 0 0 10px #4bffa5;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4bffa5;
+    border: 1px solid #4bffa5;
+    color: #242424;
+    font-size: 18px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #4bffa5;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #242424;
+    color: #4bffa5;
+    box-shadow: none;
+}
+.hero .content .div-img {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid #4bffa5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .content .div-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}

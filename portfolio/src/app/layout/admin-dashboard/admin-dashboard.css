@@ -1,0 +1,395 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.login-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    color: #fff;
+}
+.login-box {
+    background-color: #242424;
+    padding: 45px 40px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    width: 320px;
+    text-align: center;
+}
+.login-box h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+.login-box h2 span {
+    color: #4bffa5;
+}
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #1d1d1d;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #4bffa5;
+}
+
+.login-box .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4bffa5;
+    border: none;
+    color: #242424;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.login-error {
+    color: #ff6b6b;
+    margin-top: 12px;
+    font-size: 14px;
+    min-height: 18px;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #242424;
+    color: #fff;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #1d1d1d;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.sidebar .logo span {
+    color: #4bffa5;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color: #ccc;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.tab-btn:hover {
+    background-color: #242424;
+    color: #fff;
+}
+
+.tab-btn.active {
+    background-color: #4bffa5;
+    color: #242424;
+    font-weight: 700;
+}
+
+.badge {
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.view-site {
+    color: #4bffa5;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logout-btn {
+    background: none;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.logout-btn:hover {
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+}
+
+.content {
+    flex: 1;
+    padding: 35px 45px;
+    overflow-y: auto;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.panel-header h1 {
+    font-size: 28px;
+}
+
+.btn-secondary {
+    background-color: #4bffa5;
+    border: none;
+    color: #242424;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message-card {
+    background-color: #1d1d1d;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.message-card.unread {
+    border-color: #4bffa5;
+}
+
+.message-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.message-top h4 {
+    font-size: 17px;
+}
+
+.message-top span {
+    font-size: 12px;
+    color: #888;
+}
+
+.message-meta {
+    color: #4bffa5;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.message-subject {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.message-body {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.empty-state {
+    color: #888;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.project-form {
+    background-color: #1d1d1d;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.project-form h3 {
+    margin-bottom: 15px;
+}
+
+.project-form input,
+.project-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #242424;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+}
+
+.project-form textarea {
+    height: 90px;
+    resize: none;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions .btn {
+    background-color: #4bffa5;
+    border: none;
+    color: #242424;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background: none;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 10px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1d1d1d;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #333;
+}
+
+.project-card-body {
+    padding: 18px;
+}
+
+.project-card-body h4 {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.project-card-body p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.project-card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.project-card-actions button {
+    background: none;
+    border: 1px solid #444;
+    color: #ccc;
+    padding: 6px 14px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.project-card-actions .edit-btn:hover {
+    border-color: #4bffa5;
+    color: #4bffa5;
+}
+
+.project-card-actions .delete-btn:hover {
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+}
+
+@media (max-width: 800px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .sidebar .logo {
+        margin-bottom: 0;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex: unset;
+    }
+
+    .content {
+        padding: 25px;
+    }
+}

@@ -5,3 +5,7 @@ export interface IProject {
   image: string;
   link: string;
 }
+export interface IProjectResponse {
+  message: string;
+  data: IProject[];
+}
